@@ -65,6 +65,7 @@ const HorizondalStepProgressBar = (props: StepProgressBarProps) => {
                                 <props.renderStep
                                     radius={stepHeight / 2}
                                     index={index}
+                                    key={index}
                                     label={label}
                                     activeStep={activeStep}
                                     stepHeight={stepHeight}
@@ -74,6 +75,7 @@ const HorizondalStepProgressBar = (props: StepProgressBarProps) => {
                             : <Step
                                 radius={stepHeight / 2}
                                 index={index}
+                                key={index}
                                 label={label}
                                 activeStep={activeStep}
                                 stepHeight={stepHeight}
